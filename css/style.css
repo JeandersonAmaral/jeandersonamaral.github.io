@@ -29,6 +29,7 @@ body{
     position: -webkit-sticky; /*Fixa no top Safari*/
     background-color: #1f1f1f;
     width: 100%;
+    z-index: 10000;
 }
 
 .menu{
