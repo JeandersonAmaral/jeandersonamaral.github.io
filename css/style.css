@@ -39,6 +39,7 @@ body{
 }
 
 .traducao{
+    cursor: pointer;
     outline: unset;
     background-color: transparent;
     color: #66FCF1;
