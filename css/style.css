@@ -178,7 +178,7 @@ body{
     border-radius: 5px;
     border-style: solid;
     box-shadow: none;
-    transition: all .4s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 
 .botao a {
@@ -187,7 +187,7 @@ body{
 }
 
 .botao:hover {
-    transition: all .4s ease-in-out;
+    transition: all .1s ease-in-out;
     box-shadow:0 0 10px 0 #66FCF1 inset, 0 0 5px 1px #66FCF1; 
 
 
