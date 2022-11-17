@@ -203,7 +203,7 @@ sr.reveal('#napoles', {
     delay:1000,
     rotate:{
         X:0,
-        y:0,
-        z:100
+        y:-100,
+        z:50
     }
  });
