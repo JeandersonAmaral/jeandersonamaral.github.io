@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://unpkg.com/scrollreveal"></script> <!--API JS-->
+        <script language="JavaScript" type="text/javascript" src="./js/cidades_estados.js"></script>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="shortcut icon" href="./images/icons/favicon.svg" type="image/x-icon">
         <title>Jeanderson's</title>
@@ -204,54 +205,24 @@
                         </ul>
                     </div>                   <!--API PARA ENVIO DE EMAIL-->
                     <form action="https://formsubmit.co/jeanderson.amaral@outlook.com" method="post" class="formulario" target="_blank">
-                        <label for="nome">Name:</label>
-                        <input type="text" placeholder="Enter the name" name="nome" id="nome" required>
+                        <label for="nome">Nome:</label>
+                        <input type="text" placeholder="Insira o seu nome" name="nome" id="nome" required>
                         <label for="nome">Email:</label>
-                        <input type="email" placeholder="Enter the email" name="email" id="email" required>
-                        <label for="tel">Cell Number:</label>
+                        <input type="email" placeholder="Insira o seu email" name="email" id="email" required>
+                        <label for="tel">Celular:</label>
                         <input type="tel" placeholder="(xx)x xxxx-xxxx" name="telefone" id="telefone">
-                        <label for="estado">Estate:</label>
-                        <br>
-                        <select type="select" name="estate">
-                            <option value="Acre">AC</option>
-                            <option value="Alagoas">AL</option>
-                            <option value="Amapá">AP</option>
-                            <option value="Amazonas">AM</option>
-                            <option value="Bahia">BA</option>
-                            <option value="Ceará">CE</option>
-                            <option value="Distrito Federal">DF</option>
-                            <option value="Espírito Santo">ES</option>
-                            <option value="Goiás">GO</option>
-                            <option value="Maranhão">MA</option>
-                            <option value="Mato Grosso">MT</option>
-                            <option value="Mato Grosso do Sul">MS</option>
-                            <option value="Minas Gerais">MG</option>
-                            <option value="Pará">PA</option>
-                            <option value="Paraíba">PB</option>
-                            <option value="Paraná">PR</option>
-                            <option value="Pernambuco">PE</option>
-                            <option value="Piauí">PI</option>
-                            <option value="Rio de Janeiro">RJ</option>
-                            <option value="Rio Grande do Norte">RN</option>
-                            <option value="Rio Grande do Sul">RS</option>
-                            <option value="Rondônia">RO</option>
-                            <option value="Roraima">RR</option>
-                            <option value="Santa Catarina">SC</option>
-                            <option value="São Paulo">SP</option>
-                            <option value="Sergipe">SE</option>
-                            <option value="Tocantins">TO</option>
-                        </select>
-                        <br>
-                        <label for="cidade">City:</label>
-                        <input type="text" name="cidade" placeholder="Exemple: Maricá">
-                        <label for="">Subject:</label>
-                        <input type="text" placeholder="Enter the Subject" name="Assunto" id="assunto">
-                        <label for="mensagem">Message:</label>
-                        <textarea name="Mensagem" placeholder="Enter the Message" id="mensagem" cols="30" rows="10" required></textarea>
+                        <label for="estado">Estado:</label>
+                        <select id="estado1" value="RJ"></select>
+                        <label for="cidade1">Cidade:</label>
+                        <select id="cidade1" value="Maricá"></select>
+                        <label for="">Assunto:</label>
+                        <input type="text" placeholder="Insira o Assunto" name="Assunto" id="assunto">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="Mensagem" placeholder="Insira a Mensagem" id="mensagem" cols="30" rows="10" required></textarea>
                         <div class="form_final">
                             <div class="confirma">
-                                <input type="submit" value="SUBMIT" id="submit">
-                                <input type="reset" value="RESET" id="reset">
+                                <input type="submit" value="ENVIAR" id="submit">
+                                <input type="reset" value="LIMPAR" id="reset">
                             </div>
                             <div class="alternativas">
                                 <div class="alt_images">
@@ -267,15 +238,18 @@
                                         <a href="mailto:jeanderson.amaral@outlook.com">jeanderson.amaral@outlook.com</a>
                                         <br>
                                         <br>
-                                        <a href="https://goo.gl/maps/SpYj3Lc8mRr42vuW6" target="_blank">Ponta Negra - Maricá/RJ</a>
+                                        <a href="https://goo.gl/maps/SpYj3Lc8mRr42vuW6" target="_blank" >Ponta Negra - Maricá/RJ</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <!--CONFIGURA API-->
-                        <input type="hidden" name="_subject" value="NOVO CONTATO"> <!--TITULO DO EMAIL-->
-                        <input type="text" name="_honey" style="display:none;"> <!--EVITA EMAIL NO SPAN-->
-                        <input type="hidden" name="_captcha" value="false"> <!--DESABILITA O CAPTCHA-->
+                        <input type="hidden" name="_subject" value="NOVO CONTATO">
+                        <!--TITULO DO EMAIL-->
+                        <input type="text" name="_honey" style="display:none;">
+                        <!--EVITA EMAIL NO SPAN-->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!--DESABILITA O CAPTCHA-->
                     </form>
                 </div>
             </div>
@@ -301,6 +275,7 @@
         <div class="seta">
             <a href="#banner"><img src="./images/seta_cima.svg" alt="seta_para_cima"></a>
         </div>
-        <script src="./js/script.js"></script>
+        <script src="./js/function_cidades_estados.js"></script>
+        <script src="./js/reveal.js"></script>
     </body>
 </html>
