@@ -666,7 +666,61 @@ body{
     filter: drop-shadow(0 0 3px #66FCF1);
 }
 
+/*MODAL*/
 
+
+.modal{
+    padding-top: 80px;
+    background-color: #151515;
+    height: 900px;
+    width: 1280px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    transition: all 0.6s;
+}
+
+.modal a{
+    font-size: xx-large;
+}
+
+.modal_conteudo{
+    background-color: #0f0f0f;
+    display: flex;
+    width: 750px;
+    padding: 20px;
+    height: 750px;
+    border-style: solid;
+    border-width: 3px;                 
+    border-color: #66FCF1;
+    border-radius: 25px;
+    border-width: 1px;
+    box-shadow:0 0 10px 0 #66FCF1 inset, 0 0 5px 1px #66FCF1;
+}
+
+.modal_conteudo img{
+    border-radius: 15px;
+}
+
+.modal_fechar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #66FCF1;
+    text-decoration: none;
+}
+
+.modal:target{
+    margin-top: 60px;
+    z-index: 99999999;
+    visibility: visible;
+    opacity: 1;
+}
 
 /*FOOTER*/
 
