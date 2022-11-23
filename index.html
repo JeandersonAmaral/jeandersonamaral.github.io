@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://unpkg.com/scrollreveal"></script> <!--API JS-->
+        <script language="JavaScript" type="text/javascript" src="./js/cidades_estados.js"></script>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="shortcut icon" href="./images/icons/favicon.svg" type="image/x-icon">
         <title>Jeanderson's</title>
@@ -211,39 +212,9 @@
                         <label for="tel">Celular:</label>
                         <input type="tel" placeholder="(xx)x xxxx-xxxx" name="telefone" id="telefone">
                         <label for="estado">Estado:</label>
-                        <br>
-                        <select type="select" name="estate">
-                            <option value="Acre">AC</option>
-                            <option value="Alagoas">AL</option>
-                            <option value="Amapá">AP</option>
-                            <option value="Amazonas">AM</option>
-                            <option value="Bahia">BA</option>
-                            <option value="Ceará">CE</option>
-                            <option value="Distrito Federal">DF</option>
-                            <option value="Espírito Santo">ES</option>
-                            <option value="Goiás">GO</option>
-                            <option value="Maranhão">MA</option>
-                            <option value="Mato Grosso">MT</option>
-                            <option value="Mato Grosso do Sul">MS</option>
-                            <option value="Minas Gerais">MG</option>
-                            <option value="Pará">PA</option>
-                            <option value="Paraíba">PB</option>
-                            <option value="Paraná">PR</option>
-                            <option value="Pernambuco">PE</option>
-                            <option value="Piauí">PI</option>
-                            <option value="Rio de Janeiro">RJ</option>
-                            <option value="Rio Grande do Norte">RN</option>
-                            <option value="Rio Grande do Sul">RS</option>
-                            <option value="Rondônia">RO</option>
-                            <option value="Roraima">RR</option>
-                            <option value="Santa Catarina">SC</option>
-                            <option value="São Paulo">SP</option>
-                            <option value="Sergipe">SE</option>
-                            <option value="Tocantins">TO</option>
-                        </select>
-                        <br>
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" name="cidade" placeholder="Exemplo: Maricá">
+                        <select id="estado1" value="RJ"></select>
+                        <label for="cidade1">Cidade:</label>
+                        <select id="cidade1" value="Maricá"></select>
                         <label for="">Assunto:</label>
                         <input type="text" placeholder="Insira o Assunto" name="Assunto" id="assunto">
                         <label for="mensagem">Mensagem:</label>
@@ -304,6 +275,7 @@
         <div class="seta">
             <a href="#banner"><img src="./images/seta_cima.svg" alt="seta_para_cima"></a>
         </div>
-        <script src="./js/script.js"></script>
+        <script src="./js/function_cidades_estados.js"></script>
+        <script src="./js/reveal.js"></script>
     </body>
 </html>
