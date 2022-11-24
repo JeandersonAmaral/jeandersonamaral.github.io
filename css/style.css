@@ -668,7 +668,6 @@ body{
 
 /*MODAL*/
 
-
 .modal{
     padding-top: 80px;
     background-color: #151515;
@@ -708,11 +707,19 @@ body{
 }
 
 .modal_fechar{
+    width: 65px;
+    display: flex;
     position: absolute;
     top: 10px;
     right: 10px;
     color: #66FCF1;
     text-decoration: none;
+}
+
+
+.modal_fechar p{
+    margin-top: 12px;
+    font-size:small;
 }
 
 .modal:target{
